@@ -1,102 +1,180 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <link href="./css/layout.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="./css/layout.css" rel="stylesheet">
     <title>Appway</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container nav-container nav-custom">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/img/logo.png" alt="Logo"  width="160" height="auto" class="">
-            </a>            
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" >
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end p-3 p-lg-0 flex-lg-wrap align-content-end" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header justify-content-sm-end">
-                    <img src="./assets/img/logo.png" alt="Logo"  width="160" height="auto" class="d-sm-none">
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="container nav-container nav-custom">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/logo.png" alt="Logo" width="160" height="auto" class="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end p-3 p-lg-0 flex-lg-wrap
+                        align-content-end" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header justify-content-sm-end">
+                        <img src="./assets/img/logo.png" alt="Logo" width="160" height="auto" class="d-sm-none">
+                        <button type="button" class="btn-close
+                                btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Element</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Latest News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                    </ul>
                 </div>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Pages</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link disabled">Element</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link disabled">Latest News</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </ul>
+
             </div>
-        </div>
         </nav>
         <!-- Hero -->
         <div class="hero">
-            <div class="hero__content container"> 
+            <div class="hero__content container">
                 <div class=" hero__content-left col-lg-6">
-                    <h1 class="content-title">Profect App For <br> Boost Your Business</h1>
-                    <p class="content-desc">The collapse of the online-advertising market in 2001 made marketing on the iternet seem even less compelling</p>
+                    <h1 class="content-title">Profect App For <br> Boost
+                        Your Business</h1>
+                    <p class="content-desc">The collapse of the
+                        online-advertising market in 2001 made marketing
+                        on the
+                        iternet seem even less compelling</p>
                     <a class="content-button" href="#">Get App Now</a>
                 </div>
                 <div class="hero__content-right">
-                    <img src="/assets/img/phone-1.png" alt="phone-1" class="content__pict-1" >
-                    <img src="/assets/img/phone-2.png" alt="phone-1" class="content__pict-2" >
+                    <img src="/assets/img/phone-1.png" alt="phone-1" class="content__pict-1">
+                    <img src="/assets/img/phone-2.png" alt="phone-1" class="content__pict-2">
                 </div>
-            </div>     
+            </div>
         </div>
     </header>
     <main>
         <!-- Feature -->
-        <!-- <div class="feature">
-            <div class="feature__left">
+        <div class="feature container">
+            <div class="feature__left col-md-4 ">
                 <img src="./assets/img/phone-3.png" alt="phone-3" class="left__pict">
             </div>
-            <div class="feature__right">
-                <h3 class="feature__right__title">Amazing Feature</h3>
-                <p class="feature__right__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, expedita suscipit nisi fugit delectus minima neque velit, laboriosam, sint qui ex voluptatibus quam. Beatae soluta vitae quae labore, deserunt aspernatur!</p>
-                <div class="feature__right__content row">
+            <div class="feature__right col-12 col-md-6">
+                <h3 class="feature__right-title">Amazing Feature</h3>
+                <p class="feature__right-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto,
+                    expedita suscipit nisi fugit delectus minima neque velit, laboriosam, sint qui ex voluptatibus quam.
+                    Beatae soluta vitae quae labore, deserunt aspernatur!</p>
+                <div class="feature__right-content container">
+                    <div class="first-row row">
                         <div class="card shadow col-6">
                             <div class="card__content p-3">
-                                <h5 class="card__content__title">Unique Design</h5>
-                                <p class="card__content__desc">Integer quis mollis lacus maecenas in ornare ex sed scelerisque nac elit nec vehicula duis pretium libero</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    fill="currentColor" version="1.1" id="Layer_1" viewBox="0 0 512 512"
+                                    xml:space="preserve">
+                                    <path
+                                        d="M128,273.067h51.2c4.71,0,8.533-3.823,8.533-8.533c0-4.71-3.823-8.533-8.533-8.533h-42.667v-17.067h8.533     c4.71,0,8.533-3.823,8.533-8.533s-3.823-8.533-8.533-8.533h-8.533V204.8h8.533c4.71,0,8.533-3.823,8.533-8.533     s-3.823-8.533-8.533-8.533h-8.533v-17.067H179.2c4.71,0,8.533-3.823,8.533-8.533c0-4.71-3.823-8.533-8.533-8.533h-42.667v-17.067     h8.533c4.71,0,8.533-3.823,8.533-8.533s-3.823-8.533-8.533-8.533h-8.533V102.4h8.533c4.71,0,8.533-3.823,8.533-8.533     c0-4.71-3.823-8.533-8.533-8.533h-8.533V68.267H179.2c4.71,0,8.533-3.823,8.533-8.533S183.91,51.2,179.2,51.2h-42.667V17.067H256     v247.467c0,4.71,3.823,8.533,8.533,8.533c4.71,0,8.533-3.823,8.533-8.533v-256c0-4.71-3.823-8.533-8.533-8.533H128     c-4.71,0-8.533,3.823-8.533,8.533v256C119.467,269.244,123.29,273.067,128,273.067z" />
+                                    <path
+                                        d="M8.533,273.067c4.71,0,8.533-3.823,8.533-8.533V42.667c0-12.442,13.158-25.6,25.6-25.6h51.2     c4.71,0,8.533-3.823,8.533-8.533S98.577,0,93.867,0h-51.2C20.736,0,0,20.736,0,42.667v221.867     C0,269.244,3.823,273.067,8.533,273.067z" />
+                                    <path
+                                        d="M384,102.4c-4.71,0-8.533,3.823-8.533,8.533v153.6c0,4.71,3.823,8.533,8.533,8.533s8.533-3.823,8.533-8.533v-153.6     C392.533,106.223,388.71,102.4,384,102.4z" />
+                                    <path
+                                        d="M332.8,110.933v153.6c0,4.71,3.823,8.533,8.533,8.533s8.533-3.823,8.533-8.533v-153.6c0-4.71-3.823-8.533-8.533-8.533     S332.8,106.223,332.8,110.933z" />
+                                    <path
+                                        d="M349.867,494.933h-8.533V486.4c0-4.71-3.823-8.533-8.533-8.533c-4.71,0-8.533,3.823-8.533,8.533v8.533H307.2V486.4     c0-4.71-3.823-8.533-8.533-8.533s-8.533,3.823-8.533,8.533v8.533h-17.067V486.4c0-4.71-3.823-8.533-8.533-8.533     c-4.71,0-8.533,3.823-8.533,8.533v8.533h-17.067V486.4c0-4.71-3.823-8.533-8.533-8.533s-8.533,3.823-8.533,8.533v8.533H204.8     V486.4c0-4.71-3.823-8.533-8.533-8.533s-8.533,3.823-8.533,8.533v8.533h-17.067V486.4c0-4.71-3.823-8.533-8.533-8.533     c-4.71,0-8.533,3.823-8.533,8.533v8.533h-17.067V486.4c0-4.71-3.823-8.533-8.533-8.533s-8.533,3.823-8.533,8.533v8.533H102.4     V486.4c0-4.71-3.823-8.533-8.533-8.533c-4.71,0-8.533,3.823-8.533,8.533v8.533H68.267V486.4c0-4.71-3.823-8.533-8.533-8.533     S51.2,481.69,51.2,486.4v8.533h-8.533c-4.71,0-8.533,3.823-8.533,8.533S37.956,512,42.667,512h307.2     c4.71,0,8.533-3.823,8.533-8.533S354.577,494.933,349.867,494.933z" />
+                                    <path
+                                        d="M298.667,273.067c4.71,0,8.533-3.823,8.533-8.533V79.249l34.133-54.613l27.273,43.631H332.8     c-4.71,0-8.533,3.823-8.533,8.533s3.823,8.533,8.533,8.533H384c3.106,0,5.956-1.681,7.467-4.395     c1.502-2.714,1.417-6.033-0.23-8.661L348.57,4.011c-3.123-4.992-11.349-4.992-14.473,0L291.43,72.277     c-0.845,1.357-1.297,2.918-1.297,4.523v187.733C290.133,269.244,293.956,273.067,298.667,273.067z" />
+                                    <path
+                                        d="M469.333,0H384c-4.71,0-8.533,3.823-8.533,8.533s3.823,8.533,8.533,8.533h85.333c12.442,0,25.6,13.158,25.6,25.6v307.2     c0,12.442-13.158,25.6-25.6,25.6H42.667c-12.442,0-25.6-13.158-25.6-25.6V307.2h452.267c4.71,0,8.533-3.823,8.533-8.533     s-3.823-8.533-8.533-8.533H8.533c-4.71,0-8.533,3.823-8.533,8.533v51.2c0,21.931,20.736,42.667,42.667,42.667h426.667     c21.931,0,42.667-20.736,42.667-42.667v-307.2C512,20.736,491.264,0,469.333,0z" />
+                                    <path
+                                        d="M238.933,341.333c0,9.412,7.654,17.067,17.067,17.067c9.412,0,17.067-7.654,17.067-17.067     c0-9.412-7.654-17.067-17.067-17.067C246.588,324.267,238.933,331.921,238.933,341.333z" />
+                                    <path
+                                        d="M298.667,460.8c4.71,0,8.533-3.823,8.533-8.533v-34.133c0-4.71-3.823-8.533-8.533-8.533s-8.533,3.823-8.533,8.533v34.133     C290.133,456.977,293.956,460.8,298.667,460.8z" />
+                                    <path
+                                        d="M221.867,452.267v-34.133c0-4.71-3.823-8.533-8.533-8.533c-4.71,0-8.533,3.823-8.533,8.533v34.133     c0,4.71,3.823,8.533,8.533,8.533C218.044,460.8,221.867,456.977,221.867,452.267z" />
+                                    <path
+                                        d="M443.733,460.8h-17.067c-18.825,0-34.133,15.309-34.133,34.133v8.533c0,4.71,3.823,8.533,8.533,8.533h68.267     c4.71,0,8.533-3.823,8.533-8.533v-8.533C477.867,476.109,462.558,460.8,443.733,460.8z M409.6,494.933     c0-9.412,7.654-17.067,17.067-17.067h17.067c9.412,0,17.067,7.654,17.067,17.067H409.6z" />
+                                </svg>
+                                <h5 class="card__content-title">Unique Design</h5>
+                                <p class="card__content-desc">Integer quis mollis lacus maecenas in ornare ex sed
+                                    scelerisque nac elit nec vehicula duis pretium libero</p>
                             </div>
                         </div>
-                         <div class="card shadow col-6">
+                        <div class="card shadow col-6">
                             <div class="card__content p-3">
-                                <h5 class="card__content__title">Unique Design</h5>
-                                <p class="card__content__desc">Integer quis mollis lacus maecenas in ornare ex sed scelerisque nac elit nec vehicula duis pretium libero</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M16 8V5L19 2L20 4L22 5L19 8H16ZM16 8L12 11.9999M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <h5 class="card__content-title">Easy And New Project</h5>
+                                <p class="card__content-desc">Integer quis mollis lacus maecenas in ornare ex sed
+                                    scelerisque nac elit nec vehicula duis pretium libero</p>
                             </div>
                         </div>
-                         <div class="card shadow col-6">
+                    </div>
+                    <div class="second-row row">
+                        <div class="card shadow col-6">
                             <div class="card__content p-3">
-                                <h5 class="card__content__title">Unique Design</h5>
-                                <p class="card__content__desc">Integer quis mollis lacus maecenas in ornare ex sed scelerisque nac elit nec vehicula duis pretium libero</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    version="1.1" id="Layer_1" viewBox="0 0 29 32" enable-background="new 0 0 29 32"
+                                    xml:space="preserve">
+                                    <g>
+                                        <path fill="currentColor"
+                                            d="M1.045,27.731l13.303,4.245C14.397,31.992,14.449,32,14.5,32c0.053,0,0.106-0.009,0.157-0.025l13.312-4.407   C28.595,27.36,29,26.803,29,26.145s-0.404-1.218-1.03-1.425l-7.733-2.56c-0.264-0.09-0.545,0.056-0.632,0.317   c-0.087,0.263,0.055,0.545,0.317,0.632l7.733,2.56C27.975,25.775,28,26.06,28,26.145c0,0.084-0.025,0.368-0.344,0.474   l-13.159,4.356L1.35,26.778C1.029,26.676,1.001,26.392,1,26.307c-0.001-0.084,0.021-0.368,0.339-0.478l8.028-2.753   c0.261-0.089,0.4-0.374,0.311-0.635c-0.09-0.262-0.375-0.401-0.635-0.311l-8.028,2.753C0.392,25.097-0.007,25.659,0,26.317   S0.417,27.53,1.045,27.731z" />
+                                        <path fill="currentColor"
+                                            d="M15.679,0.063C9.81-0.595,4.817,3.982,4.817,9.705c0,2.24,0.729,4.23,2.355,6.442l6.31,9.121   c0.249,0.359,0.658,0.574,1.096,0.574h0c0.441,0,0.853-0.218,1.098-0.577l4.173-5.993l2.344-3.568   c1.655-2.094,2.361-4.718,1.988-7.388C23.581,4.022,20.005,0.551,15.679,0.063z M21.382,15.12l-2.362,3.592l-4.168,5.986   c-0.089,0.13-0.222,0.145-0.274,0.145s-0.185-0.014-0.274-0.143l-6.318-9.133c-1.5-2.041-2.169-3.85-2.169-5.862   C5.817,4.905,9.734,1,14.548,1c0.335,0,0.675,0.019,1.018,0.058c3.88,0.437,7.086,3.548,7.624,7.397   C23.525,10.852,22.892,13.206,21.382,15.12z" />
+                                        <path fill="currentColor"
+                                            d="M14.497,4.705c-2.757,0-5,2.243-5,5s2.243,5,5,5s5-2.243,5-5S17.253,4.705,14.497,4.705z M14.497,13.705   c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S16.702,13.705,14.497,13.705z" />
+                                    </g>
+                                </svg>
+                                <h5 class="card__content-title">Track Anything</h5>
+                                <p class="card__content-desc">Integer quis mollis lacus maecenas in ornare ex sed
+                                    scelerisque nac elit nec vehicula duis pretium libero</p>
                             </div>
                         </div>
-                         <div class="card shadow col-6">
+                        <div class="card shadow col-6">
                             <div class="card__content p-3">
-                                <h5 class="card__content__title">Unique Design</h5>
-                                <p class="card__content__desc">Integer quis mollis lacus maecenas in ornare ex sed scelerisque nac elit nec vehicula duis pretium libero</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 512 512" id="Layer_1" version="1.1" xml:space="preserve">
+                                    <path fill="currentColor"
+                                        d="M330.3,201.8c-7.5,0-13.5,6.1-13.5,13.5c0,1.8,0.4,3.6,1,5.2l-40,52.3c-2.3-1.7-5-2.7-8-2.7   c-7,0-12.8,5.4-13.5,12.3l-54.9-15.2c-2.3-4.2-6.8-7.1-11.9-7.1c-7.5,0-13.5,6.1-13.5,13.5s6.1,13.5,13.5,13.5   c7,0,12.8-5.4,13.5-12.3l54.9,15.2c2.3,4.2,6.8,7.1,11.9,7.1c7.5,0,13.5-6.1,13.5-13.5c0-1.8-0.4-3.6-1-5.2l40-52.3   c2.3,1.7,5,2.7,8,2.7c7.5,0,13.5-6.1,13.5-13.5S337.8,201.8,330.3,201.8z M189.4,280.3c-3.6,0-6.5-2.9-6.5-6.5s2.9-6.5,6.5-6.5   c3.6,0,6.5,2.9,6.5,6.5S193,280.3,189.4,280.3z M269.8,290.3c-2.8,0-5.1-1.7-6.1-4.2c0,0,0,0,0,0c-0.3-0.7-0.4-1.5-0.4-2.3   c0-3.6,2.9-6.5,6.5-6.5s6.5,2.9,6.5,6.5S273.4,290.3,269.8,290.3z M330.3,221.9c-3.6,0-6.5-2.9-6.5-6.5s2.9-6.5,6.5-6.5   s6.5,2.9,6.5,6.5S333.9,221.9,330.3,221.9z" />
+                                    <path fill="currentColor"
+                                        d="M366.5,46.3h-221c-16.2,0-29.4,13.2-29.4,29.4v360.5c0,16.2,13.2,29.4,29.4,29.4h221   c16.2,0,29.4-13.2,29.4-29.4V75.7C395.9,59.5,382.7,46.3,366.5,46.3z M381.9,436.3c0,8.5-6.9,15.4-15.4,15.4h-221   c-8.5,0-15.4-6.9-15.4-15.4V75.7c0-8.5,6.9-15.4,15.4-15.4h221c8.5,0,15.4,6.9,15.4,15.4V436.3z" />
+                                    <path fill="currentColor"
+                                        d="M353.3,81.7H158.7c-7.6,0-13.8,6.2-13.8,13.8v296.2c0,7.6,6.2,13.8,13.8,13.8h194.6c7.6,0,13.8-6.2,13.8-13.8   V95.5C367.1,87.9,360.9,81.7,353.3,81.7z M360.1,391.7c0,3.8-3.1,6.8-6.8,6.8H158.7c-3.8,0-6.8-3.1-6.8-6.8V95.5   c0-3.8,3.1-6.8,6.8-6.8h194.6c3.8,0,6.8,3.1,6.8,6.8V391.7z" />
+                                    <path fill="currentColor"
+                                        d="M256,413.1c-8.5,0-15.5,7-15.5,15.5c0,8.5,7,15.5,15.5,15.5s15.5-7,15.5-15.5C271.5,420,264.5,413.1,256,413.1   z M256,437.1c-4.7,0-8.5-3.8-8.5-8.5c0-4.7,3.8-8.5,8.5-8.5s8.5,3.8,8.5,8.5C264.5,433.2,260.7,437.1,256,437.1z" />
+                                    <path fill="currentColor"
+                                        d="M256,76.7c3.3,0,6-2.7,6-6c0-3.3-2.7-6-6-6s-6,2.7-6,6C250,74,252.7,76.7,256,76.7z" />
+                                </svg>
+                                <h5 class="card__content-title">Unlimited Dashboard</h5>
+                                <p class="card__content-desc">Integer quis mollis lacus maecenas in ornare ex sed
+                                    scelerisque nac elit nec vehicula duis pretium libero</p>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
-        </div> -->
+        </div>
     </main>
 
     <footer>
@@ -105,14 +183,17 @@
 
     <script>
         const nav = document.querySelector('.navbar');
-        window.addEventListener('scroll', function(){
-            if(window.scrollY > 64){
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 64) {
                 nav.classList.add('nav-scrolled')
             } else if (window.scrollY < 64) {
                 nav.classList.remove('nav-scrolled')
             }
         })
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
