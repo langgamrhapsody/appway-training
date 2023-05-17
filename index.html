@@ -8,20 +8,20 @@
     <title>Appway</title>
   </head>
   <body>
-    <header class="position-relative">
+    <header>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container-fluid nav-container">
+        <div class="container nav-container nav-custom">
             <a class="navbar-brand" href="#">
                 <img src="./assets/img/logo.png" alt="Logo"  width="160" height="auto" class="">
             </a>            
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" >
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end p-3 text-bg-dark flex-lg-wrap align-content-end" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                    <img src="./assets/img/logo.png" alt="Logo"  width="160" height="auto" class="">
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="offcanvas offcanvas-end p-3 p-lg-0 flex-lg-wrap align-content-end" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header justify-content-sm-end">
+                    <img src="./assets/img/logo.png" alt="Logo"  width="160" height="auto" class="d-sm-none">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -40,48 +40,79 @@
                 <a class="nav-link disabled">Latest News</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link disabled">Contact</a>
+                <a class="nav-link" href="#">Contact</a>
             </ul>
             </div>
         </div>
         </nav>
         <!-- Hero -->
-        <div class="hero hero__container d-md-flex">
-            <div class="hero__content ">
-                    <h1>Profect App For <br> Boost Your Business</h1>
-                    <p>The collapse of the online-advertising market in 2001 made marketing on the iternet seem even less compelling</p>
-                <a href="#">Get App Now</a>
-            </div>
-            <div class="hero__picture">
-                <img src="/assets/img/phone-1.png" alt="phone-1" class="hero__picture__1">
-                <img src="/assets/img/phone-2.png" alt="phone-1" class="hero__picture__2">
-
-            </div>
+        <div class="hero">
+            <div class="hero__content container"> 
+                <div class=" hero__content-left col-lg-6">
+                    <h1 class="content-title">Profect App For <br> Boost Your Business</h1>
+                    <p class="content-desc">The collapse of the online-advertising market in 2001 made marketing on the iternet seem even less compelling</p>
+                    <a class="content-button" href="#">Get App Now</a>
+                </div>
+                <div class="hero__content-right">
+                    <img src="/assets/img/phone-1.png" alt="phone-1" class="content__pict-1" >
+                    <img src="/assets/img/phone-2.png" alt="phone-1" class="content__pict-2" >
+                </div>
+            </div>     
         </div>
-        <img src="./assets/img/banner-1.png" alt="banner-1" class="banner__background">
     </header>
-
     <main>
         <!-- Feature -->
-        <div class="feature">
+        <!-- <div class="feature">
             <div class="feature__left">
-                <img src="./assets/img/phone-3.png" alt="phone-3" class="feature__left__pict">
+                <img src="./assets/img/phone-3.png" alt="phone-3" class="left__pict">
             </div>
             <div class="feature__right">
-                <h3>Amazing Feature</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, expedita suscipit nisi fugit delectus minima neque velit, laboriosam, sint qui ex voluptatibus quam. Beatae soluta vitae quae labore, deserunt aspernatur!</p>
+                <h3 class="feature__right__title">Amazing Feature</h3>
+                <p class="feature__right__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, expedita suscipit nisi fugit delectus minima neque velit, laboriosam, sint qui ex voluptatibus quam. Beatae soluta vitae quae labore, deserunt aspernatur!</p>
                 <div class="feature__right__content row">
-                    <div class="col"></div>
-                    <div class="col"></div>
+                        <div class="card shadow col-6">
+                            <div class="card__content p-3">
+                                <h5 class="card__content__title">Unique Design</h5>
+                                <p class="card__content__desc">Integer quis mollis lacus maecenas in ornare ex sed scelerisque nac elit nec vehicula duis pretium libero</p>
+                            </div>
+                        </div>
+                         <div class="card shadow col-6">
+                            <div class="card__content p-3">
+                                <h5 class="card__content__title">Unique Design</h5>
+                                <p class="card__content__desc">Integer quis mollis lacus maecenas in ornare ex sed scelerisque nac elit nec vehicula duis pretium libero</p>
+                            </div>
+                        </div>
+                         <div class="card shadow col-6">
+                            <div class="card__content p-3">
+                                <h5 class="card__content__title">Unique Design</h5>
+                                <p class="card__content__desc">Integer quis mollis lacus maecenas in ornare ex sed scelerisque nac elit nec vehicula duis pretium libero</p>
+                            </div>
+                        </div>
+                         <div class="card shadow col-6">
+                            <div class="card__content p-3">
+                                <h5 class="card__content__title">Unique Design</h5>
+                                <p class="card__content__desc">Integer quis mollis lacus maecenas in ornare ex sed scelerisque nac elit nec vehicula duis pretium libero</p>
+                            </div>
+                        </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </main>
 
     <footer>
 
     </footer>
 
+    <script>
+        const nav = document.querySelector('.navbar');
+        window.addEventListener('scroll', function(){
+            if(window.scrollY > 64){
+                nav.classList.add('nav-scrolled')
+            } else if (window.scrollY < 64) {
+                nav.classList.remove('nav-scrolled')
+            }
+        })
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
 </html>
