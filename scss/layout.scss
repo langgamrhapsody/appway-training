@@ -22,6 +22,7 @@
 }
 
 .offcanvas {
+  height: 100vh;
   background: rgb(69 39 164);
 }
 
@@ -307,13 +308,14 @@
 
   &__left {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     height: 100%;
 
     .left__pict {
       height: 90%;
+      // padding-right: 32px;
 
       @media screen and (max-width: 1200px) {
         height: 85%;
@@ -331,6 +333,9 @@
   }
 
   &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     &-title {
       @media screen and (max-width: 768px) {
         text-align: center;
@@ -392,6 +397,10 @@
     color: white;
     background-color: rgb(69, 39, 164, 0.5);
 
+    &-title {
+      color: color(text, primary);
+    }
+
     & svg {
       color: white;
     }
@@ -408,19 +417,24 @@
 
     & svg {
       color: color(text, secondary);
-      width: 35%;
-      padding: 5%;
+      width: 30%;
+      padding: 3%;
 
       @media screen and (max-width: 992px) {
         width: 30%;
       }
+      @media screen and (max-width: 576px) {
+        width: 15%;
+        padding: 0;
+        margin-left: 50px;
+      }
     }
 
     &-title {
-      margin-top: 32px;
+      margin-top: 24px;
 
-      @media screen and (max-width: 1200px) {
-        font-size: 14px;
+      @media screen and (max-width: 1500px) {
+        font-size: 12px;
       }
       @media screen and (max-width: 992px) {
         font-size: 12px;
@@ -431,21 +445,36 @@
       @media screen and (max-width: 768px) {
         margin-bottom: 0;
       }
+
+      @media screen and (max-width: 576px) {
+        margin-top: 4px;
+        font-size: 10px;
+        text-align: center;
+      }
     }
 
     &-desc {
-      margin-top: 16px;
+      margin-top: 13px;
       font-size: 12px;
-      @media screen and (max-width: 1200px) {
+      @media screen and (max-width: 1500px) {
         font-size: 10px;
       }
       @media screen and (max-width: 768px) {
         margin-top: 8px;
       }
+      @media screen and (max-width: 576px) {
+        margin-top: 4px;
+        font-size: 10px;
+        text-align: center;
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      padding: 8px;
     }
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1500px) {
     width: 200px;
     height: 200px;
   }
@@ -463,5 +492,198 @@
   @media screen and (max-width: 460px) {
     width: 150px;
     height: 150px;
+  }
+}
+
+.feature-card {
+  padding: 120px 0;
+
+  background: no-repeat;
+  background-image: url("/assets//img/bg-shap-1.png");
+  background-position: 0 170px;
+  background-size: cover;
+
+  .card-feature {
+    margin-top: 32px;
+    padding: 48px 0;
+
+    &__content {
+      justify-content: center;
+      gap: 32px;
+      &-card {
+        width: 280px;
+        height: 350px;
+        padding: 0 !important;
+
+        background-color: white;
+
+        overflow: hidden;
+        transform-style: preserve-3d;
+
+        &:hover .background__layer {
+          opacity: 1;
+        }
+
+        &:hover .content-card {
+          &__title {
+            color: color(text, primary);
+          }
+
+          &__image {
+            & svg {
+              color: color(text, primary);
+            }
+          }
+
+          &__desc {
+            color: white;
+          }
+        }
+
+        .background__layer {
+          opacity: 0;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          z-index: -1;
+          background-color: #4526a5;
+          transition: all ease-in-out 0.4s;
+
+          @mixin backgroundLayer() {
+            width: 150%;
+            height: 100%;
+            position: absolute;
+            border-radius: 50%;
+          }
+
+          &-1 {
+            @include backgroundLayer;
+            background-color: #4e32a9;
+            left: -70px;
+            top: -80px;
+          }
+          &-2 {
+            @include backgroundLayer;
+            background-color: #573baa;
+            left: -70px;
+            top: -150px;
+          }
+          &-3 {
+            @include backgroundLayer;
+            background-color: #6046b1;
+
+            left: -70px;
+            top: -220px;
+          }
+        }
+
+        .content-card {
+          padding: 10%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          .content-card__image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            position: relative;
+
+            width: 100px;
+            height: 100px;
+            margin: 24px auto;
+            border-radius: 50%;
+            background-color: white;
+
+            &::before {
+              content: "";
+              position: absolute;
+              top: -3px;
+              right: -8px;
+              z-index: -1;
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+              background-color: #efefef;
+              opacity: 0.5;
+            }
+
+            & svg {
+              padding: 30%;
+              width: 100%;
+              height: 100%;
+            }
+
+            @media screen and (max-width: 576px) {
+              width: 50px;
+              height: 50px;
+
+              &::before {
+                width: 50px;
+                height: 50px;
+              }
+            }
+
+            @media screen and (max-width: 756px) {
+              width: 80px;
+              height: 80px;
+
+              &::before {
+                width: 80px;
+                height: 80px;
+              }
+            }
+          }
+
+          &__title {
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+
+            @media screen and (max-width: 576px) {
+              font-size: 12px;
+            }
+            @media screen and (min-width: 576px) {
+              margin-top: 24px;
+            }
+          }
+          &__desc {
+            color: grey;
+            font-size: 12px;
+            text-align: center;
+            @media screen and (max-width: 576px) {
+              font-size: 10px;
+            }
+          }
+        }
+
+        @media screen and (max-width: 1200px) {
+          width: 200px;
+          height: 300px;
+        }
+
+        @media screen and (max-width: 768px) {
+          width: 200px;
+          height: 300px;
+        }
+
+        @media screen and (max-width: 576px) {
+          width: 170px;
+          height: 250px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        align-items: center;
+        margin: auto;
+        gap: 16px;
+        max-width: 420px;
+      }
+    }
+
+    @media screen and (max-width: 375px) {
+      margin-top: 100px;
+    }
   }
 }
