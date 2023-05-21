@@ -12108,7 +12108,6 @@ textarea.form-control-lg {
 }
 
 .fifth-section {
-  display: flex;
   position: relative;
   height: 80vh;
   width: 100%;
@@ -12198,6 +12197,244 @@ textarea.form-control-lg {
   .fifth-section {
     padding-top: 150px;
   }
+}
+
+.sixth-section {
+  margin: 72px 0;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .sixth-section__container {
+    max-width: 920px;
+  }
+}
+.sixth-section .pricing {
+  margin: auto;
+  text-align: center;
+}
+.sixth-section .pricing__title {
+  font-weight: 600;
+}
+.sixth-section .pricing__desc {
+  margin-top: 24px;
+  color: grey;
+  font-size: 12px;
+}
+.sixth-section .pricing__content {
+  padding: 0 32px;
+  margin: 42px 0;
+}
+@media screen and (max-width: 768px) {
+  .sixth-section .pricing__content-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+  }
+}
+.sixth-section .pricing__content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+}
+.sixth-section .pricing__content-container .pricing-card {
+  position: relative;
+  width: 90%;
+  height: 500px;
+  margin: 0;
+  border: 1px solid #efefef;
+}
+.sixth-section .pricing__content-container .pricing-card__title {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 15%;
+  color: grey;
+  font-size: 16px;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .sixth-section .pricing__content-container .pricing-card__title {
+    font-size: 24px;
+  }
+}
+.sixth-section .pricing__content-container .pricing-card__price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15%;
+  gap: 4px;
+  background-color: #efefef;
+}
+.sixth-section .pricing__content-container .pricing-card__price-currency {
+  margin-bottom: 8px;
+  color: rgb(6, 72, 6);
+  font-size: 12px;
+}
+.sixth-section .pricing__content-container .pricing-card__price-nominal {
+  margin: 0;
+  color: #4527a4;
+  font-size: 32px;
+  font-weight: 700;
+}
+.sixth-section .pricing__content-container .pricing-card__price-period {
+  margin-top: 8px;
+  color: grey;
+  font-size: 12px;
+}
+.sixth-section .pricing__content-container .pricing-card__feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 50%;
+  gap: 12px;
+  padding-top: 32px;
+}
+.sixth-section .pricing__content-container .pricing-card__feature-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 32px;
+}
+.sixth-section .pricing__content-container .pricing-card__feature-content svg {
+  color: #4527a4;
+  width: 12px;
+  height: 12px;
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .sixth-section .pricing__content-container .pricing-card__feature-content svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+.sixth-section .pricing__content-container .pricing-card__feature-content p {
+  display: flex;
+  padding-left: 16px;
+  margin: 0;
+  color: grey;
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .sixth-section .pricing__content-container .pricing-card__feature-content p {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .sixth-section .pricing__content-container .pricing-card__feature-content p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .sixth-section .pricing__content-container .pricing-card__feature-content {
+    padding: 0 16px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 864px) {
+  .sixth-section .pricing__content-container .pricing-card__feature-content {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .sixth-section .pricing__content-container .pricing-card__feature-content {
+    padding: 0 48px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .sixth-section .pricing__content-container .pricing-card__feature-content {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sixth-section .pricing__content-container .pricing-card__feature {
+    gap: 24px;
+    min-height: 40%;
+  }
+}
+.sixth-section .pricing__content-container .pricing-card__button {
+  width: max-content;
+  padding: 7px 25px;
+  margin: auto;
+  margin-top: 32px;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  background-color: #4526a5;
+  border-radius: 25px;
+}
+@media screen and (max-width: 768px) {
+  .sixth-section .pricing__content-container .pricing-card__button {
+    width: 120px;
+    padding: 12px 25px;
+  }
+}
+.sixth-section .pricing__content-container .pricing-card__img {
+  display: flex;
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+}
+.sixth-section .pricing__content-container .pricing-card__img-content {
+  width: 70%;
+}
+@media screen and (max-width: 1200px) {
+  .sixth-section .pricing__content-container .pricing-card__img-content {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sixth-section .pricing__content-container .pricing-card {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .sixth-section .pricing__content {
+    padding: 0 12px;
+  }
+}
+.sixth-section .pricing__select {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding-top: 80px;
+  color: #4527a4;
+  font-size: 12px;
+  font-weight: 500;
+}
+.sixth-section .pricing__select .monthly {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.sixth-section .pricing__select-button {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 54px;
+  height: 32px;
+  padding: 2px;
+  border: 1px solid #4526a5;
+  outline: none;
+  border-radius: 25px;
+  background-color: transparent;
+  transition: all ease-in-out 0.4s;
+}
+.sixth-section .pricing__select-button .button-content {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #4526a5;
+  transition: all ease-in-out 0.4s;
+}
+.sixth-section .pricing__select-button .yearly {
+  transform: translateX(24px);
+}
+.sixth-section .pricing__select .yearly {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 /*# sourceMappingURL=layout.css.map */
