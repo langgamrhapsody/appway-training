@@ -1663,7 +1663,93 @@
 }
 
 .eighth-section {
+  position: relative;
   width: 100%;
-  min-height: 80vh;
-  background-color: color(bg, secondary);
+  height: 100vh;
+
+  .get-app {
+    height: 80%;
+    margin-bottom: 10%;
+    background-color: color(bg, secondary);
+    overflow: hidden;
+
+    &__content {
+      position: relative;
+      height: 100%;
+      width: 100%;
+
+      background-repeat: no-repeat;
+      background-position: bottom left;
+      background-size: 65%;
+      background-image: url("/assets/img/shap-3.png");
+      overflow: hidden;
+
+      &-container {
+        display: flex;
+        align-items: center;
+        height: 100%;
+      }
+
+      &-left {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        color: white;
+      }
+
+      &-desc {
+        font-size: 15px;
+        line-height: 2.4;
+      }
+
+      &-right {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        .content-get-app__img-1 {
+          width: 35%;
+          z-index: 1;
+        }
+        .content-get-app__img-2 {
+          width: 55%;
+          position: absolute;
+          z-index: 0;
+          bottom: 0;
+          left: 50px;
+        }
+      }
+
+      &-button {
+        display: flex;
+        gap: 12px;
+        .app-button {
+          display: flex;
+          align-items: center;
+
+          width: 185px;
+
+          gap: 10px;
+          padding: 12px 24px;
+          color: white;
+          text-decoration: none;
+          border: 1px solid white;
+          border-radius: 15px;
+
+          &__text {
+            font-size: 12px;
+            margin: 0;
+
+            & span {
+              font-size: 16px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
 }

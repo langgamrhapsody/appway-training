@@ -12604,9 +12604,82 @@ textarea.form-control-lg {
 }
 
 .eighth-section {
+  position: relative;
   width: 100%;
-  min-height: 80vh;
+  height: 100vh;
+}
+.eighth-section .get-app {
+  height: 80%;
+  margin-bottom: 10%;
   background-color: #4526a5;
+  overflow: hidden;
+}
+.eighth-section .get-app__content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 65%;
+  background-image: url("/assets/img/shap-3.png");
+  overflow: hidden;
+}
+.eighth-section .get-app__content-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.eighth-section .get-app__content-left {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  color: white;
+}
+.eighth-section .get-app__content-desc {
+  font-size: 15px;
+  line-height: 2.4;
+}
+.eighth-section .get-app__content-right {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.eighth-section .get-app__content-right .content-get-app__img-1 {
+  width: 35%;
+  z-index: 1;
+}
+.eighth-section .get-app__content-right .content-get-app__img-2 {
+  width: 55%;
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 50px;
+}
+.eighth-section .get-app__content-button {
+  display: flex;
+  gap: 12px;
+}
+.eighth-section .get-app__content-button .app-button {
+  display: flex;
+  align-items: center;
+  width: 185px;
+  gap: 10px;
+  padding: 12px 24px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+.eighth-section .get-app__content-button .app-button__text {
+  font-size: 12px;
+  margin: 0;
+}
+.eighth-section .get-app__content-button .app-button__text span {
+  font-size: 16px;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=layout.css.map */
