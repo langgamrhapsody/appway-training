@@ -1684,6 +1684,13 @@
       background-image: url("/assets/img/shap-3.png");
       overflow: hidden;
 
+      @media screen and (max-width: 1200px) {
+        background-size: 80%;
+      }
+      @media screen and (max-width: 1200px) {
+        background-size: 90%;
+      }
+
       &-container {
         display: flex;
         align-items: center;
@@ -1694,14 +1701,29 @@
         display: flex;
         flex-direction: column;
         align-content: center;
-        flex-wrap: wrap;
-        gap: 50px;
+        gap: 35px;
         color: white;
+
+        @media screen and (max-width: 768px) {
+          gap: 20px;
+        }
+
+        @media screen and (max-width: 576px) {
+          padding: 0 48px;
+        }
+
+        @media screen and (max-width: 420px) {
+          padding: 0 24px;
+        }
       }
 
       &-desc {
         font-size: 15px;
         line-height: 2.4;
+
+        @media screen and (max-width: 768px) {
+          font-size: 12px;
+        }
       }
 
       &-right {
@@ -1710,9 +1732,32 @@
         bottom: 0;
         right: 0;
 
+        @media screen and (max-width: 992px) {
+          padding-left: 40px;
+        }
+
+        @media screen and (max-width: 768px) {
+          padding-left: 0;
+          justify-content: center;
+        }
+
         .content-get-app__img-1 {
           width: 35%;
           z-index: 1;
+
+          @media screen and (max-width: 1200px) {
+            width: 45%;
+          }
+          @media screen and (max-width: 992px) {
+            width: 60%;
+          }
+          @media screen and (max-width: 768px) {
+            width: 70%;
+          }
+
+          @media screen and (min-width: 520px) and (max-width: 576px) {
+            width: 65%;
+          }
         }
         .content-get-app__img-2 {
           width: 55%;
@@ -1720,12 +1765,25 @@
           z-index: 0;
           bottom: 0;
           left: 50px;
+          @media screen and (max-width: 1200px) {
+            width: 65%;
+          }
+          @media screen and (max-width: 992px) {
+            width: 75%;
+          }
+          @media screen and (max-width: 768px) {
+            display: none;
+          }
         }
       }
 
       &-button {
         display: flex;
         gap: 12px;
+
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+        }
         .app-button {
           display: flex;
           align-items: center;
@@ -1738,14 +1796,34 @@
           text-decoration: none;
           border: 1px solid white;
           border-radius: 15px;
+          transition: all ease-in-out 0.3s;
+          cursor: pointer;
+
+          &:hover {
+            color: color(text, secondary);
+            background-color: white;
+            border: 1px solid color(text, secondary);
+          }
+
+          @media screen and (max-width: 576px) {
+            width: 140px;
+            padding: 12px 8px;
+          }
 
           &__text {
             font-size: 12px;
             margin: 0;
 
+            @media screen and (max-width: 992px) {
+              font-size: 10px;
+            }
+
             & span {
               font-size: 16px;
               font-weight: 600;
+              @media screen and (max-width: 992px) {
+                font-size: 12px;
+              }
             }
           }
         }
