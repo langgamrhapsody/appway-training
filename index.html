@@ -14,7 +14,7 @@
     <header>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <div class="container nav-container">
+            <div class="container nav-container nav-custom">
                 <a class="navbar-brand" href="#">
                     <img src="./assets/img/logo.png" alt="Logo" width="160" height="auto" class="">
                 </a>
@@ -85,7 +85,7 @@
                 <div class="feature__right-content container">
                     <div class="first-row row">
                         <div class="card shadow col-6">
-                            <div class="card__content p-3">
+                            <div class="card__content">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     fill="currentColor" version="1.1" id="Layer_1" viewBox="0 0 512 512"
                                     xml:space="preserve">
@@ -118,7 +118,7 @@
                             </div>
                         </div>
                         <div class="card shadow col-6">
-                            <div class="card__content p-3">
+                            <div class="card__content">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
                                     <path
                                         d="M16 8V5L19 2L20 4L22 5L19 8H16ZM16 8L12 11.9999M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7"
@@ -133,7 +133,7 @@
                     </div>
                     <div class="second-row row">
                         <div class="card shadow col-6">
-                            <div class="card__content p-3">
+                            <div class="card__content">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     version="1.1" id="Layer_1" viewBox="0 0 29 32" enable-background="new 0 0 29 32"
                                     xml:space="preserve">
@@ -152,7 +152,7 @@
                             </div>
                         </div>
                         <div class="card shadow col-6">
-                            <div class="card__content p-3">
+                            <div class="card__content ">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     viewBox="0 0 512 512" id="Layer_1" version="1.1" xml:space="preserve">
                                     <path fill="currentColor"
@@ -203,7 +203,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-feature__content-card shadow col-4 mt-md-5" data-tilt>
+                    <div class="card-feature__content-card custom-margin-top shadow col-4" data-tilt>
                         <div class="background__layer">
                             <div class="background__layer-1"></div>
                             <div class="background__layer-2"></div>
@@ -262,7 +262,7 @@
         <div class="third-section">
             <div class="container">
                 <div class="mobile-application row">
-                    <div class="mobile-application__left col-5 position-relative">
+                    <div class="mobile-application__left col-12 col-sm-5 position-relative">
                         <h3 class="mobile-application__left-title">
                             Mobile Application <br> Redefined
                         </h3>
@@ -280,10 +280,8 @@
                                 </svg>
                             </div>
                         </a>
-                        <img class="mobile-application__left-img position-absolute" src="./assets/img/image-shap-1.png"
-                            alt="">
                     </div>
-                    <div class="mobile-application__right col-7">
+                    <div class="mobile-application__right col-12 col-sm-7">
                         <div class="mobile-application__right-img">
                             <img class="right-img-1" src="/assets/img/dashbord-1.jpg" alt="dashbord-1">
                             <img class="right-img-2" src="/assets/img/dashbord-2.jpg" alt="dashbord-2">
@@ -297,7 +295,7 @@
         <div class="fourth-section">
             <div class="container">
                 <div class="business-information row">
-                    <div class="business-information__left col-5 position-relative">
+                    <div class="business-information__left col-12 col-sm-5 position-relative">
                         <h3 class="business-information__left-title">
                             Easy access to business <br> Information
                         </h3>
@@ -315,10 +313,9 @@
                                 </svg>
                             </div>
                         </a>
-                        <img class="business-information__left-img position-absolute"
-                            src="./assets/img/image-shap-2.png" alt="">
+
                     </div>
-                    <div class="business-information__right col-7">
+                    <div class="business-information__right col-12 col-sm-7">
                         <div class="business-information__right-img">
                             <img class="right-img-1" src="/assets/img/dashbord-3.jpg" alt="dashbord-3">
                             <img class="right-img-2" src="/assets/img/dashbord-4.jpg" alt="dashbord-4">
@@ -330,7 +327,7 @@
         </div>
         <!-- Video Demo App -->
         <div class="fifth-section">
-            <div class="video-demo__left col-7">
+            <div class="video-demo__left col-12 col-sm-7">
                 <div class="video-demo__left-content">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path fill="currentColor"
@@ -627,9 +624,9 @@
                     <div class="news__content row">
                         <div class="news__content-container col-8 col-sm-6 col-md-3">
                             <div class="news__content-card">
-                                <div class="news__content-card-img">
+                                <a href="#" class="news__content-card-img">
                                     <img src="./assets/img/news-1.jpg" alt="news-1" width="100%" height="100%">
-                                </div>
+                                </a>
                                 <div class="news__content-card-container">
                                     <div class="news__content-card-date">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="14"
@@ -639,18 +636,18 @@
                                         </svg>
                                         <p class="content-date">January 11, 2019</p>
                                     </div>
-                                    <p class="news__content-card-title">
+                                    <a class="news__content-card-title">
                                         Design your apps in your own way business Strategies
-                                    </p>
+                                    </a>
                                     <a href="#" class="news__content-card-button">Read More</a>
                                 </div>
                             </div>
                         </div>
                         <div class="news__content-container col-8 col-sm-6 col-md-3">
                             <div class="news__content-card">
-                                <div class="news__content-card-img">
+                                <a href="#" class="news__content-card-img">
                                     <img src="./assets/img/news-2.jpg" alt="news-1" width="100%" height="100%">
-                                </div>
+                                </a>
                                 <div class="news__content-card-container">
                                     <div class="news__content-card-date">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="14"
@@ -660,17 +657,17 @@
                                         </svg>
                                         <p class="content-date">January 10, 2019</p>
                                     </div>
-                                    <p class="news__content-card-title">
-                                        We support our user every time and upgrade our app. </p>
+                                    <a href="#" class="news__content-card-title">
+                                        We support our user every time and upgrade our app. </a>
                                     <a href="#" class="news__content-card-button">Read More</a>
                                 </div>
                             </div>
                         </div>
                         <div class="news__content-container col-8 col-sm-6 col-md-3">
                             <div class="news__content-card">
-                                <div class="news__content-card-img">
+                                <a href="#" class="news__content-card-img">
                                     <img src="./assets/img/news-3.jpg" alt="news-1" width="100%" height="100%">
-                                </div>
+                                </a>
                                 <div class="news__content-card-container">
                                     <div class="news__content-card-date">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="14"
@@ -680,9 +677,9 @@
                                         </svg>
                                         <p class="content-date">January 09, 2019</p>
                                     </div>
-                                    <p class="news__content-card-title">
+                                    <a href="#" class="news__content-card-title">
                                         We developed the app for our customer to easy to use it
-                                    </p>
+                                    </a>
                                     <a href="#" class="news__content-card-button">Read More</a>
                                 </div>
                             </div>
@@ -695,7 +692,7 @@
         <div class="tenth-section">
             <div class="container">
                 <div class="subscribe row">
-                    <div class="subscribe__left col-6 position-relative">
+                    <div class="subscribe__left col-12 col-sm-6 position-relative">
                         <h3 class="subscribe__left-title">
                             Subscribe our Newsletter
                         </h3>
@@ -706,9 +703,8 @@
                         <input id="email-subs" class="subscribe__left-input" type="text" placeholder="Enter your email">
                         <button class="btn subscribe__left-button">Subscribe Now</button>
 
-                        <img class="subscribe__left-img position-absolute" src="./assets/img/subscribe-1.png" alt="">
                     </div>
-                    <div class="subscribe__right col-6">
+                    <div class="subscribe__right col-12 col-sm-6">
                         <img class="subscribe__right-img" src="/assets/img/subscribe-1.png" alt="">
                     </div>
                 </div>
@@ -722,7 +718,7 @@
         <div class="footer">
             <div class="footer__container container">
                 <div class="footer__content row">
-                    <div class="footer__content-container col-8 col-sm-3">
+                    <div class="footer__content-container col-12 col-sm-3">
                         <div class="footer__content-custom">
                             <img class="footer__content-item-img" src="/assets/img/footer-logo.png" alt="footer-logo">
                             <p class="footer__content-item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing
@@ -768,7 +764,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="footer__content-container col-8 col-sm-3">
+                    <div class="footer__content-container col-12 col-sm-3">
                         <div class="footer__content-item">
                             <p class="footer__content-item-title">Support</p>
                             <ul class="footer__content-item-link">
@@ -835,7 +831,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="footer__content-container col-8 col-sm-3">
+                    <div class="footer__content-container col-12 col-sm-3">
                         <div class="footer__content-item">
                             <p class="footer__content-item-title">Links</p>
                             <ul class="footer__content-item-link">
@@ -902,7 +898,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="footer__content-container col-8  col-sm-3">
+                    <div class="footer__content-container col-12  col-sm-3">
                         <div class="footer__content-item">
                             <p class="footer__content-item-title">Support</p>
                             <ul class="footer__content-item-link">
