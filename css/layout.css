@@ -11061,12 +11061,6 @@ textarea.form-control-lg {
   padding: 8px 0;
 }
 
-@media screen and (max-width: 475px) {
-  .nav-custom {
-    padding: 0 16px;
-  }
-}
-
 .navbar-nav .nav-item .nav-link {
   padding: 20px;
   color: white;
@@ -11205,15 +11199,12 @@ textarea.form-control-lg {
   right: 0;
   padding-top: 200px;
 }
-.hero__content-right-pict-first {
+.hero__content-right-pict {
   width: 50%;
   height: auto;
   display: inline-block;
 }
 .hero__content-right-pict-second {
-  display: inline-block;
-  width: 50%;
-  height: auto;
   margin-left: -100px;
 }
 @media screen and (max-width: 1420px) {
@@ -12853,6 +12844,10 @@ textarea.form-control-lg {
   color: #4527a4;
   font-weight: 700;
   font-size: 14px;
+  text-decoration: none;
+}
+.ninth-section__container .news__content-card-button:hover {
+  text-decoration: underline;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .ninth-section__container {
@@ -13189,6 +13184,9 @@ textarea.form-control-lg {
   line-height: 2;
   text-decoration: none;
   color: inherit;
+}
+.footer__content-item-link .link-item__content-text-link:hover {
+  text-decoration: underline;
 }
 @media screen and (max-width: 992px) {
   .footer__content-item-link .link-item__content-text-link {
